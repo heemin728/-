@@ -102,7 +102,7 @@
 
       ~~2020~~ It's 2021!
    ~~2020~~ It's 2021!
-
+<br>
 - 단락이 새로 생성되면 강조 멈춤
 
       This ~~has a
@@ -133,6 +133,7 @@
  - ')'가 링크의 중간에 존재하는 경우 적용되지 않음
  
 <br>
+
         www.google.com/search?q=Markup+(business)
 
         www.google.com/search?q=Markup+(business)))
@@ -151,6 +152,7 @@
   <br>
   - 맨 끝에 세미콜론 (;) 이 올 경우, 앞서 &과 알파벳이 존재하면(entity reference) autolink에 포함
 <br>
+
         www.google.com/search?q=commonmark&hl=en
 
         www.google.com/search?q=commonmark&hl;
@@ -225,5 +227,4 @@
 ## Emojis
 
 - type :EMOJICODE: 
-
-https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#smileys--emotion
+- https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#smileys--emotion 에서 이모지 코드를 확인할 
