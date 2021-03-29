@@ -235,4 +235,4 @@
 ## Emojis
 
 - type :EMOJICODE: 
-- https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#smileys--emotion 에서 이모지 코드를 확인할 
+- https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#smileys--emotion 에서 이모지 코드를 확인할 수 있음
