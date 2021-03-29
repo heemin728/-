@@ -147,13 +147,13 @@
    
     
     
-   www.google.com/search?q=Markup+(business)
+    www.google.com/search?q=Markup+(business)
 
-  www.google.com/search?q=Markup+(business)))
+    www.google.com/search?q=Markup+(business)))
 
-  (www.google.com/search?q=Markup+(business))
+   (www.google.com/search?q=Markup+(business))
 
-  (www.google.com/search?q=Markup+(business)
+   (www.google.com/search?q=Markup+(business)
   
   <br> 
   
@@ -163,9 +163,9 @@
 
         www.google.com/search?q=commonmark&hl;
 
-  www.google.com/search?q=commonmark&hl=en
+       www.google.com/search?q=commonmark&hl=en
 
-  www.google.com/search?q=commonmark&hl;
+       www.google.com/search?q=commonmark&hl;
   
  <br>
  
@@ -185,9 +185,6 @@
     - +은 @의 전에는 사용 가능, 후에는 불가
  - scheme  `mailto:` 는 생성된 링크에 자동으로 추가됨
  - **+**는 **@** 의 이전에는 사용 가능하지만, 이후에는 사용할 수 없음
- 
- <br>
- 
  - **.**, **-**, **_** 는 **@** 의 앞 뒤에 모두 사용할 수 있음
       - **.** 만 이메일 주소의 끝에 사용되며, 주소의 일부로 생각하지 않음
 
