@@ -79,7 +79,7 @@
 
 - GFM은 task list 확장을 지원함
 - task list item marker로 시작하며, **공백이 필요**함
-- `[ character ]` - html의 <input type="checkbox"> 와 같음
+- `[ character ]` - html의 `<input type="checkbox">` 와 같음
 - `[ ]` 사이가 비면 체크되지 않음
 - `[ ]`에 'x' 또는 'X' 가 입력되면 체크됨
 - 체크박스 요소가 어떻게 상호작용 하는지는 정의하지 않음
@@ -193,10 +193,10 @@
             a.b-c_d@a.b-
             a.b-c_d@a.b_
 
-      a.b-c_d@a.b
-      a.b-c_d@a.b.
-      a.b-c_d@a.b-
-      a.b-c_d@a.b_
+      a.b-c_d@a.b <br>
+      a.b-c_d@a.b. <br>
+      a.b-c_d@a.b- <br>
+      a.b-c_d@a.b_ <br>
 
 <br><br>
 
