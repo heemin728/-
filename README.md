@@ -109,6 +109,7 @@
 
       new paragraph~~.
 
+
     This ~~has a
 
     new paragraph~~.
@@ -126,13 +127,14 @@
  
              www.ssu.ac.kr/
  
- www.ssu.ac.kr/
+      www.ssu.ac.kr/
   
  - 링크의 끝에 오는 후행 구두점 ( ?, !, ., ,, :, \*, _, ~) 는 링크의 일부로 보지 않음 
  - autolink가 ')'로 끝날 경우, '(' 의 개수보다 많은 경우 autolink에서 제외함 
- - ')'가 링크의 중간에 존재하는 경우 적용되지 않음
  
-<br>
+ <br>
+ 
+ - ')'가 링크의 중간에 존재하는 경우 적용되지 않음
 
         www.google.com/search?q=Markup+(business)
 
@@ -142,6 +144,9 @@
 
         (www.google.com/search?q=Markup+(business)
     
+   
+    
+    
    www.google.com/search?q=Markup+(business)
 
   www.google.com/search?q=Markup+(business)))
@@ -149,9 +154,10 @@
   (www.google.com/search?q=Markup+(business))
 
   (www.google.com/search?q=Markup+(business)
-  <br>
+  
+  <br> 
+  
   - 맨 끝에 세미콜론 (;) 이 올 경우, 앞서 &과 알파벳이 존재하면(entity reference) autolink에 포함
-<br>
 
         www.google.com/search?q=commonmark&hl=en
 
@@ -160,6 +166,7 @@
   www.google.com/search?q=commonmark&hl=en
 
   www.google.com/search?q=commonmark&hl;
+  
  <br>
  
   - '<' 가 올 경우 즉시 링크를 끝냄
@@ -167,6 +174,7 @@
         https://myclass.ssu.ac.kr/log<in.php
   
     https://myclass.ssu.ac.kr/log<in.php
+    
 <br>    
 
  - email autolink는 이메일 주소가 인정되면 가능
@@ -177,6 +185,7 @@
     - +은 @의 전에는 사용 가능, 후에는 불가
  - scheme  `mailto:` 는 생성된 링크에 자동으로 추가됨
  - **+**는 **@** 의 이전에는 사용 가능하지만, 이후에는 사용할 수 없음
+ <br>
  - **.**, **-**, **_** 는 **@** 의 앞 뒤에 모두 사용할 수 있음
       - **.** 만 이메일 주소의 끝에 사용되며, 주소의 일부로 생각하지 않음
 
