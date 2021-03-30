@@ -13,8 +13,24 @@
 
 - 열과 행으로 이루어진 정렬
 - 셀은 pipe(|)로 구분 - 명료성을 위해 앞뒤로 pipe를 추가할 수 있음
-- 열을 구분하는 문자로 hyphens(-)만 사용, 앞 뒤로 colon(:)을 이용해 좌우/가운데 정렬 표기
-- header row 아래는 열을 구분하는 문자 (-)가 반드시 있어야 함
+- 블록 레벨의 요소들은 표 안에 삽입될 수 없음
+- Formatting content (링크, 강조 등) 사용 가능
+- 표 앞에 한 줄의 공백 필요
+- 열을 구분하는 문자로 hyphens(-)만 사용
+-  앞 뒤로 colon(:)을 이용해 좌우/가운데 정렬
+
+       | Left-aligned | Center-aligned | Right-aligned |
+       | :---         |     :---:      |          ---: |
+       | git status   | git status     | git status    |
+       | git diff     | git diff       | git diff      |
+    
+      | Left-aligned | Center-aligned | Right-aligned |
+      | :---         |     :---:      |          ---: |
+      | git status   | git status     | git status    |
+      | git diff     | git diff       | git diff      |
+ 
+  
+- header row 아래는 열을 구분하는 문자 (-)가 3개 이상 있어야 함
 
       | number | name |
       :-: | -----------:
@@ -24,7 +40,7 @@
   :-: | -----------:
   1 | apple
 <br>
-
+- 길이를 맞출 필요는 없으며, 앞과 끝의 pipes(|) 역시 일관되지 않을 수 있음
 - pipe(|)를 표기하기 위해 이스케이프 문자(\) 사용    
     
       | pipe\|character  |
@@ -32,7 +48,7 @@
       | gfm `\|` markdown |
       | github **\|** markup |
      
-  | pipe\|chharacter  |
+  | pipe\|character  |
   | ------ |
   | gfm `\|` markdown |
   | github **\|** markup |
@@ -52,6 +68,8 @@
   | 2021 | 2 |
   > bar
 <br>
+
+- header row는 delimiter row(구분 열)의 개수와 일치해야 함 - 그렇지 않으면 표가 인식되지 않음
 
 - header row의 셀보다 적은 셀이 입력되면 빈 셀 생성/ 많은 셀이 입력되면 무시 
 
@@ -79,7 +97,8 @@
 
 - GFM은 task list 확장을 지원함
 - task list item marker로 시작하며, **공백이 필요**함
-- `[ character ]` - html의 `<input type="checkbox">` 와 같음
+- -  html의 `<input type="checkbox">` 와 같음
+- `[ whitespace / lowercase 'x' / uppercase 'X' ]` 
 - `[ ]` 사이가 비면 체크되지 않음
 - `[ ]`에 'x' 또는 'X' 가 입력되면 체크됨
 - 체크박스 요소가 어떻게 상호작용 하는지는 정의하지 않음
@@ -96,7 +115,9 @@
   - [ ] programming
 
 <br><br>
+
 ## Inlines - strikethrough
+
 - 추가적인 강조 타입 사용 (취소선) 
 - tildes(~)로 둘러쌓임
 
@@ -117,12 +138,14 @@
  <br><br>
  
  ## Inlines - Autolinks
+ 
  - 범위를 정하기 위한 <, > 이 필요하지 않음
  - 라인의 처음, 공백 이후, 또는 범위를 정하기 위한 \*, ~, _, ( 이후에 올 수 있음
  - autolink는 ' www. '과 이후의 valid domain이 오면 인식됨
     - valid domain은 period(.)에 의해 구분되는 알파벳, hyphens(-), underscores(_) 로 구성됨
     - 최소 하나 이상의 period(.)이 필요
     - underscore(_) 는 도메인의 마지막 두 부분에 존재할 수 있음
+    
  - http는 자동으로 삽입됨
  
              www.ssu.ac.kr/
@@ -182,7 +205,6 @@
     - @ 글자가 존재하는 경우 
     - 하나 이상의 알파벳, **-**,**_** 은 peroids(.)에 의해 구분됨
     - 적어도 하나의 period(.)가 있어야 하며, 마지막 문자가 _ 또는 -일 수 없음
-    - +은 @의 전에는 사용 가능, 후에는 불가
  - scheme  `mailto:` 는 생성된 링크에 자동으로 추가됨
  - **+**는 **@** 의 이전에는 사용 가능하지만, 이후에는 사용할 수 없음
  - **.**, **-**, **_** 는 **@** 의 앞 뒤에 모두 사용할 수 있음
@@ -235,4 +257,4 @@
 ## Emojis
 
 - type :EMOJICODE: 
-- https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#smileys--emotion 에서 이모지 코드를 확인할 수 있음
+- https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#smileys--emotion  에서 이모지 코드를 확인할 수 있음
