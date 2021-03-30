@@ -29,6 +29,7 @@
       | git status   | git status     | git status    |
       | git diff     | git diff       | git diff      |
  
+  <br>
   
 - header row 아래는 열을 구분하는 문자 (-)가 3개 이상 있어야 함
 
