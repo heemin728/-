@@ -40,8 +40,11 @@
   | number | name |
   :-: | -----------:
   1 | apple
+  
 <br>
+
 - 길이를 맞출 필요는 없으며, 앞과 끝의 pipes(|) 역시 일관되지 않을 수 있음
+
 - pipe(|)를 표기하기 위해 이스케이프 문자(\) 사용    
     
       | pipe\|character  |
@@ -49,10 +52,10 @@
       | gfm `\|` markdown |
       | github **\|** markup |
      
-  | pipe\|character  |
-  | ------ |
-  | gfm `\|` markdown |
-  | github **\|** markup |
+     | pipe\|character  |
+     | ------ |
+     | gfm `\|` markdown |
+     | github **\|** markup |
 <br>
 
 - 빈 줄 혹은 다른 블록을 만나면 표 중단
@@ -98,7 +101,7 @@
 
 - GFM은 task list 확장을 지원함
 - task list item marker로 시작하며, **공백이 필요**함
-- -  html의 `<input type="checkbox">` 와 같음
+- html의 `<input type="checkbox">` 와 같음
 - `[ whitespace / lowercase 'x' / uppercase 'X' ]` 
 - `[ ]` 사이가 비면 체크되지 않음
 - `[ ]`에 'x' 또는 'X' 가 입력되면 체크됨
@@ -120,11 +123,12 @@
 ## Inlines - strikethrough
 
 - 추가적인 강조 타입 사용 (취소선) 
-- tildes(~)로 둘러쌓임
+- 강조하고자 하는 문자 앞 뒤로 tildes(~)를 두개 씩 추가
 
       ~~2020~~ It's 2021!
    ~~2020~~ It's 2021!
 <br>
+
 - 단락이 새로 생성되면 강조 멈춤
 
       This ~~has a
@@ -132,9 +136,9 @@
       new paragraph~~.
 
 
-  This ~~has a
+     This ~~has a
 
-  new paragraph~~.
+     new paragraph~~.
     
  <br><br>
  
@@ -149,7 +153,7 @@
     
  - http는 자동으로 삽입됨
  
-             www.ssu.ac.kr/
+        www.ssu.ac.kr/
  
       www.ssu.ac.kr/
   
@@ -206,9 +210,12 @@
     - @ 글자가 존재하는 경우 
     - 하나 이상의 알파벳, **-**,**_** 은 peroids(.)에 의해 구분됨
     - 적어도 하나의 period(.)가 있어야 하며, 마지막 문자가 _ 또는 -일 수 없음
+   
+   <br>
+   
  - scheme  `mailto:` 는 생성된 링크에 자동으로 추가됨
- - **+**는 **@** 의 이전에는 사용 가능하지만, 이후에는 사용할 수 없음
- - **.**, **-**, **_** 는 **@** 의 앞 뒤에 모두 사용할 수 있음
+ - **+** 는 **@** 의 이전에는 사용 가능하지만, 이후에는 사용할 수 없음
+ - **.** , **-** , **_** 는 **@** 의 앞 뒤에 모두 사용할 수 있음
       - **' . '** 만 이메일 주소의 끝에 사용되며, 주소의 일부로 생각하지 않음
 
             a.b-c_d@a.b
@@ -254,6 +261,7 @@
   <xmp> is disallowed.  <XMP> is also disallowed.
 </blockquote>
 
+<br>
 
 ## Emojis
 
