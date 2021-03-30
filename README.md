@@ -157,11 +157,11 @@
  
       www.ssu.ac.kr/
   
+  <br>
+  
  - 링크의 끝에 오는 후행 구두점 ( ?, !, ., ,, :, \*, _, ~) 는 링크의 일부로 보지 않음 
  - autolink가 ')'로 끝날 경우, '(' 의 개수보다 많은 경우 autolink에서 제외함 
- 
- <br>
- 
+
  - ')'가 링크의 중간에 존재하는 경우 적용되지 않음
 
         www.google.com/search?q=Markup+(business)
