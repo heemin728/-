@@ -268,11 +268,14 @@
 ## Emojis
 
 - type :EMOJICODE: 
-       `:grinning:`
-       :grinning:
+
+ <br>
+ 
+   `:grinning:`
+   :grinning:
        
     <br>
     
-     `:star_struck:`
-     :star_struck:
+   `:star_struck:`
+   :star_struck:
 - https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#smileys--emotion  에서 이모지 코드를 확인할 수 있음
