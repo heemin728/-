@@ -263,6 +263,8 @@
 
 <br>
 
+</strong> </em>
+
 ## Emojis
 
 - type :EMOJICODE: 
